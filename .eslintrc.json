@@ -17,6 +17,10 @@
 		"quotes": "warn",
 		"semi": "error",
 		"object-curly-newline": "off",
-		"no-restricted-syntax": "off"
+		"no-restricted-syntax": "off",
+		"no-param-reassign": "off",
+		"no-restricted-properties": "off",
+		"no-underscore-dangle": "off",
+		"guard-for-in": "off"
 	}
 }

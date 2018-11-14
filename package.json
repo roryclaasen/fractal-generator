@@ -21,24 +21,28 @@
 	"dependencies": {
 		"clean-webpack-plugin": "^1.0.0",
 		"css-loader": "^1.0.1",
+		"dat.gui": "^0.7.3",
 		"html-webpack-plugin": "^3.2.0",
 		"html-webpack-template": "^6.2.0",
 		"node-sass": "^4.10.0",
 		"normalize.css": "^8.0.1",
+		"p5": "^0.7.2",
 		"sass-loader": "^7.1.0",
-		"stats.js": "^0.17.0",
 		"style-loader": "^0.23.1",
 		"uglifyjs-webpack-plugin": "^2.0.1",
-		"webpack": "^4.25.1",
 		"webpack-cli": "^3.1.2",
 		"webpack-dev-server": "^3.1.10",
 		"webpack-merge": "^4.1.4"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.1.6",
+		"@babel/preset-env": "^7.1.6",
+		"babel-loader": "^8.0.4",
 		"eslint": "^5.9.0",
 		"eslint-config-airbnb": "^17.1.0",
 		"eslint-plugin-import": "^2.14.0",
 		"eslint-plugin-jsx-a11y": "^6.1.2",
-		"eslint-plugin-react": "^7.11.1"
+		"eslint-plugin-react": "^7.11.1",
+		"webpack": "^4.25.1"
 	}
 }
