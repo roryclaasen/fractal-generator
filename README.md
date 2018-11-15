@@ -1,5 +1,7 @@
 # Fractal Generator
 
+> [roryclaasen.github.io/fractal-generator](https://roryclaasen.github.io/fractal-generator)
+
 Mandelbrot Fractal Generator
 
 ## Instructions
