@@ -61,6 +61,7 @@ const myp5 = new P5((sketch) => {
 			}
 		}
 		gui.__controllers.forEach((c) => c.updateDisplay());
+		Object.values(gui.__folders).forEach((f) => f.__controllers.forEach((c) => c.updateDisplay()));
 		sketch.redraw();
 	};
 
@@ -88,6 +89,7 @@ const myp5 = new P5((sketch) => {
 		zoomFractal(sketch.mouseX * options.quality, sketch.mouseY * options.quality, zoomFactor, zoomIn);
 
 		gui.__controllers.forEach((c) => c.updateDisplay());
+		Object.values(gui.__folders).forEach((f) => f.__controllers.forEach((c) => c.updateDisplay()));
 		sketch.redraw();
 		return false;
 	};
