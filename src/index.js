@@ -40,15 +40,15 @@ const myp5 = new P5((sketch) => {
 	const renderer = new Renderer();
 
 	const gui = new GUI();
-	gui.add(options, 'maxIterations', 1);
-	gui.add(options, 'zoom', 100);
+	gui.add(options, 'maxIterations', 1).listen();
+	gui.add(options, 'zoom', 100).listen();
 
 	const offset = gui.addFolder('Offset');
-	offset.add(options, 'xPan');
-	offset.add(options, 'yPan');
+	offset.add(options, 'xPan').listen();
+	offset.add(options, 'yPan').listen();
 
 	const imagesOptions = gui.addFolder('Image Options');
-	imagesOptions.add(options, 'quality', 0.1, 1).step(0.1);
+	imagesOptions.add(options, 'quality', 0.1, 1).step(0.1).listen();
 
 	gui.add(options, 'draw');
 	options.draw = () => sketch.redraw();
@@ -60,8 +60,6 @@ const myp5 = new P5((sketch) => {
 				options[key] = defaultOptions[key];
 			}
 		}
-		gui.__controllers.forEach((c) => c.updateDisplay());
-		Object.values(gui.__folders).forEach((f) => f.__controllers.forEach((c) => c.updateDisplay()));
 		sketch.redraw();
 	};
 
@@ -87,9 +85,6 @@ const myp5 = new P5((sketch) => {
 			zoomFactor = 1;
 		}
 		zoomFractal(sketch.mouseX * options.quality, sketch.mouseY * options.quality, zoomFactor, zoomIn);
-
-		gui.__controllers.forEach((c) => c.updateDisplay());
-		Object.values(gui.__folders).forEach((f) => f.__controllers.forEach((c) => c.updateDisplay()));
 		sketch.redraw();
 		return false;
 	};

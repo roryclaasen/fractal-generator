@@ -4,51 +4,82 @@
 
 Mandelbrot Fractal Generator
 
+## Contents
+
+- [Instructions](#instructions)
+- [Options](#options)
+- [Branches](#branches)
+- [License](#license)
+
 ## Instructions
 
 - `Right Click` to zoom in and center on part of the graphic.
 - Holding `control` will zoom out.
 - Holding `shift` will just center on the the part of the graphic
 
-## Fractal Options
+## Options
 
-### Max Iterations
+- [Max_Iterations](#max_iterations)
+- [Zoom](#zoom)
+- Offset
+  - [Offset.X_Pan](#offsetx_pan)
+  - [Offset.Y_Pan](#offsety_pan)
+- Image Options
+  - [Image_Options.Quality](#image_optionsquality)
+- [Draw](#draw)
+- [Reset](#reset)
 
-> Default: `250`
+### Max_Iterations
+
+| Type   | Default | Min |
+|:------:|:-------:|:---:|
+| Number | `250`   | `1` |
 
 ### Zoom
 
-> Default: `250`
+| Type   | Default | Min   |
+|:------:|:-------:|:-----:|
+| Number | `250`   | `100` |
 
 Current zoom level
 
-### Offset
+### Offset.X_Pan
 
-#### X Pan
-
-> Default: `-100`
-
-Relative X Offset
-
-#### Y Pan
-
-> Default: `0`
+| Type   | Default |
+|:------:|:-------:|
+| Number | `-100`  |
 
 Relative X Offset
 
-### Image Options
+### Offset.Y_Pan
 
-#### Quality
+| Type   | Default |
+|:------:|:-------:|
+| Number | `0`     |
 
-> Default: `0.9`
+Relative X Offset
+
+### Image_Options.Quality
+
+| Type   | Default | Min   | Max |
+|:------:|:-------:|:-----:|:---:|
+| Number | `0.9`   | `0.1` | `1` |
 
 Image quality
 
 ### Draw
 
+| Type   |
+|:------:|
+| Button |
+
 Force Redraw
 
 ### Reset
+
+| Type   |
+|:------:|
+| Button |
 
 Reset's any changed options back to default
 
